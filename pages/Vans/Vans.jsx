@@ -43,6 +43,7 @@ export default function Vans() {
     }
 
     function renderVanElements(vans) {
+        console.log(vans);
         const displayedVans = typeFilter
             ? vans.filter(van => van.type === typeFilter)
             : vans

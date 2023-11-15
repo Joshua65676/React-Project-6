@@ -22,6 +22,7 @@ export default function Dashboard() {
                 </div>
                 <Link to={`vans/${van.id}`}>View</Link>
             </div>
+        
         ))
 
         return (
