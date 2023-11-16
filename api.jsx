@@ -85,29 +85,29 @@ export async function loginUser() {
 
     // return data 
 
-//     const auth = getAuth();
-// createUserWithEmailAndPassword(auth, email, password)
-//   .then((userCredential) => {
-//     // The user is signed up
-//     const user = userCredential.user;
-//   })
-//   .catch((error) => {
-//     // Handle Errors here.
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//   });
+    const auth = getAuth();
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // The user is signed up
+    const user = userCredential.user;
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
   
-  const auth = getAuth();
-  signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // The user is signed in
-      const user = userCredential.user;
-    })
-    .catch((error) => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-    });
+//   const auth = getAuth();
+//   signInWithEmailAndPassword(auth, email, password)
+//     .then((userCredential) => {
+//       // The user is signed in
+//       const user = userCredential.user;
+//     })
+//     .catch((error) => {
+//       // Handle Errors here.
+//       const errorCode = error.code;
+//       const errorMessage = error.message;
+//     });
   
 
 }

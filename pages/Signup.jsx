@@ -29,14 +29,14 @@ export async function action({ request }) {
     }
 }
 
-export default function Login() {
+export default function Signup() {
     const errorMessage = useActionData()
     const message = useLoaderData()
     const navigation = useNavigation()
 
     return (
         <div className="login-container">
-            <h1>Log in to your account</h1>
+            <h1>Create an account</h1>
             {message && <h3 className="red">{message}</h3>}
             {errorMessage && <h3 className="red">{errorMessage}</h3>}
 
@@ -64,7 +64,8 @@ export default function Login() {
                     }
                 </button>
             </Form>
-                <Link to="/pages/Signup.jsx">Create Account</Link>
+             <Link to="/pages/Login.jsx">Log in</Link>
         </div>
     )
 }
+
